@@ -10,7 +10,7 @@ bot = telebot.TeleBot(TOKEN)
 
 def send_message():
     now = datetime.datetime.now().strftime('%d.%m.%Y %H:%M')
-    message = f'📈 B-GAS Sabah Raporu ({now})\n\n"Bugün analiz edilecek hisseler hazırlanıyor..."\n⏳'
+    message = f"📈 B-GAS Sabah Raporu ({now})\n\n'Bugün analiz edilecek hisseler hazırlanıyor...'\n⏳"
     bot.send_message(chat_id, message)
 
 # Her sabah saat 09:30'da çalışması için zamanlayıcı
